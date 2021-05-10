@@ -1,0 +1,5 @@
+apiVersion: kustomize.config.k8s.i/v1beta1
+kind: Kustomization
+namespace: flux-system
+resources:
+  - jetstack.yaml
