@@ -1,0 +1,30 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: metallb
+  namespace: metallb-system
+spec:
+  interval: 1h
+  chart:
+    spec:
+      chart: bitnami
+      version: 0.9.6
+      sourceRef:
+        kind: HelmRepository
+        name: metallb
+        namespace: flux-system
+  install:
+    createNamespace: true
+  targetNamespace: metallb-system
+  releaseName: metallb
+  values:
+    configInline:
+      address-pools:
+      - name: generic-cluster-pool
+        protocol: layer2
+        addresses:
+        - 10.72.48.0/20
+    controller:
+      psp:
+        create: false
