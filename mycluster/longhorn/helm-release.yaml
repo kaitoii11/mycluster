@@ -13,6 +13,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: longhorn
+        namespace: flux-system
   install:
     createNamespace: true
   targetNamespace: longhorn-system
