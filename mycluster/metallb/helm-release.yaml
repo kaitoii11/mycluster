@@ -8,6 +8,7 @@ spec:
   interval: 1h
   chart:
     spec:
+      # renovate: registryUrl=https://charts.bitnami.com/bitnami
       chart: metallb
       version: 2.3.6
       sourceRef:
