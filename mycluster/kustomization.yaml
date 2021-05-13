@@ -6,4 +6,5 @@ resources:
 - flux-system
 - metallb
 - longhorn
+- prometheus
 - traefik

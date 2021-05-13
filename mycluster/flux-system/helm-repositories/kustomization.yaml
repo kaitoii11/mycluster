@@ -5,4 +5,5 @@ resources:
   - bitnami.yaml
   - jetstack.yaml
   - longhorn.yaml
+  - prometheus.yaml
   - traefik.yaml
