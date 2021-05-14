@@ -5,6 +5,7 @@ resources:
 - cert-manager
 - flagger
 - flux-system
+- harbor
 - metallb
 - longhorn
 - prometheus
