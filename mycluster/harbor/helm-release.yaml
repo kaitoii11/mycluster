@@ -10,7 +10,7 @@ spec:
     spec:
       # renovate: registryUrl=https://helm.goharbor.io
       chart: harbor
-      version: v1.5.5
+      version: 1.6.2
       sourceRef:
         kind: HelmRepository
         name: harbor
