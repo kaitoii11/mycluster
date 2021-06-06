@@ -25,7 +25,7 @@ spec:
       - name: generic-cluster-pool
         protocol: layer2
         addresses:
-        - 10.72.48.0/20
+        - 192.168.254.1-192.168.254.254
     controller:
       psp:
         create: false
