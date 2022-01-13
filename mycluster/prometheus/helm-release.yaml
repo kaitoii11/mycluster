@@ -23,8 +23,6 @@ spec:
     global:
       rbac:
         pspEnabled: false
-    alertmanager:
-      enabled: false
     prometheus:
       service:
         type: NodePort
