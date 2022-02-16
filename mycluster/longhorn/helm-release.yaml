@@ -21,3 +21,6 @@ spec:
   releaseName: longhorn
   values:
     enablePSP: false
+    service:
+      ui:
+        type: LoadBalancer
