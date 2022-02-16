@@ -24,4 +24,4 @@ spec:
     - "--metrics.prometheus=true"
     ingressClass:
       enabled: true
-      isDefaultClass: true
+      isDefaultClass: false
