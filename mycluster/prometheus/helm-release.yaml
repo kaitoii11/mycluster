@@ -23,6 +23,6 @@ spec:
     global:
       rbac:
         pspEnabled: false
-    prometheus:
+    grafana:
       service:
-        type: NodePort
+        type: LoadBalancer
