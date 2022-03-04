@@ -23,6 +23,10 @@ spec:
     global:
       rbac:
         pspEnabled: false
+    prometheus:
+      prometheusSpec:
+        # Disable in order to match servicemonitor created from other helm charts
+        serviceMonitorSelectorNilUsesHelmValues: false
     grafana:
       service:
         type: LoadBalancer
