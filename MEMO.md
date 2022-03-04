@@ -1,3 +1,9 @@
+# Cilium install
+```
+$ helm repo add cilium https://helm.cilium.io/
+$ helm upgrade cilium cilium/cilium --version 1.11.2 --namespace kube-system --set monitor.enabled=true --set hubble.metrics.enabled="{dns,drop,tcp,flow,icmp,http}" --set operator.prometheus.enabled=true --set hubble.metrics.serviceMonitor.enabled=true --set operator.prometheus.serviceMonitor.enabled=true --set prometheus.enabled=true --set prometheus.serviceMonitor.enabled=true
+```
+
 # Flux install
 - export GitHub access token and username
 ```
