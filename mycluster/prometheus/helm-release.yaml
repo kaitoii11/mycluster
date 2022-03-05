@@ -30,3 +30,6 @@ spec:
     grafana:
       service:
         type: LoadBalancer
+      sidecar:
+        dashboards:
+          searchNamespace: ALL
