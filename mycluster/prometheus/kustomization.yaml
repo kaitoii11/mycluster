@@ -5,6 +5,7 @@ resources:
   - helm-release.yaml
 configMapGenerator:
   - name: grafana-custom-dashboards
+    namespace: prometheus-system
     files:
       - dashboards/cilium-metrics.json
       - dashboards/cilium-operator.json
