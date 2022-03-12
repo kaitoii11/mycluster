@@ -27,6 +27,8 @@ spec:
       prometheusSpec:
         # Disable in order to match servicemonitor created from other helm charts
         serviceMonitorSelectorNilUsesHelmValues: false
+        # Disable in order to match rule created from other helm charts
+        ruleSelectorNilUsesHelmValues: false
     grafana:
       service:
         type: LoadBalancer
