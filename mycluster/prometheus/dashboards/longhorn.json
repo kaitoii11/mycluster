@@ -2152,8 +2152,8 @@
     ]
   },
   "timezone": "",
-  "title": "Longhorn Example v1.1.0",
+  "title": "Longhorn",
   "uid": "2BCgsldGz",
   "version": 101,
-  "description": "An example dashboard for Longhorn v1.1.0"
+  "description": "Dashboard for Longhorn"
 }
