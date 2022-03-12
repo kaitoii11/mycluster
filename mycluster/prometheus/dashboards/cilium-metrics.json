@@ -8216,7 +8216,9 @@
   "refresh": false,
   "schemaVersion": 25,
   "style": "dark",
-  "tags": [],
+  "tags": [
+  "cilium"
+  ],
   "templating": {
     "list": [
       {
