@@ -14,6 +14,14 @@ configMapGenerator:
     options:
       labels:
         grafana_dashboard: "1"
+  - name: flux-dashboards
+    namespace: prometheus-system
+    files:
+      - dashboards/flux-cluster.json
+      - dashboards/flux-control-plane.json
+    options:
+      labels:
+        grafana_dashboard: "1"
   - name: longhorn-dashboards
     namespace: prometheus-system
     files:
@@ -21,3 +29,4 @@ configMapGenerator:
     options:
       labels:
         grafana_dashboard: "1"
+
