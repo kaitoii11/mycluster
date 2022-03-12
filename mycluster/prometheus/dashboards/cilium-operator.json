@@ -1027,5 +1027,5 @@
   "title": "Cilium v1.11 Operator Metrics",
   "uid": "1GC0TT4Wz",
   "version": 1,
-  "description": "Dashboard for the Cilium v1.11 (https://cilium.io/) Operator metrics"
+  "description": "Dashboard for the Cilium Operator metrics"
 }
