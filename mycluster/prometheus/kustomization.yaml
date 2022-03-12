@@ -3,13 +3,21 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - helm-release.yaml
+  - ./rules
 configMapGenerator:
-  - name: grafana-custom-dashboards
+  - name: cilium-dashboards
     namespace: prometheus-system
     files:
       - dashboards/cilium-metrics.json
       - dashboards/cilium-operator.json
       - dashboards/hubble.json
+    options:
+      labels:
+        grafana_dashboard: "1"
+  - name: longhorn-dashboards
+    namespace: prometheus-system
+    files:
+      - dashboards/longhorn.json
     options:
       labels:
         grafana_dashboard: "1"
