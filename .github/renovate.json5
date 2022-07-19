@@ -7,7 +7,7 @@
   "timezone": "Asia/Tokyo",
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
-  "assignees": ["@anthr76"],
+  "assignees": ["@kaitoii11"],
   "reviewersFromCodeOwners": true,
   "helm-values": {
     "fileMatch": ["mycluster/.+\\.yaml$"]
