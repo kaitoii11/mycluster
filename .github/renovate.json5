@@ -24,5 +24,8 @@
       // tell renovatebot to search helm repositories
       "datasourceTemplate": "helm"
     }
-  ]
+  ],
+  "kubernetes": {
+    "fileMatch": ["mycluster/.+\\.yaml$"]
+  }
 }
