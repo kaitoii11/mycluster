@@ -14,18 +14,29 @@
   },
   "regexManagers": [
     // regexManager to read and process helm repositories
-    {
-      // tell renovatebot to parse only helm releases
-      "fileMatch": ["mycluster/.+helm-release\\.yaml$"],
-      // tell renovatebot to match the following pattern in helm release files
-      "matchStrings": [
-        "registryUrl=(?<registryUrl>.*?)\n *chart: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
-      ],
-      // tell renovatebot to search helm repositories
-      "datasourceTemplate": "helm"
-    }
+  {
+    // tell renovatebot to parse only helm releases
+    "fileMatch": ["mycluster/.+helm-release\\.yaml$"],
+    // tell renovatebot to match the following pattern in helm release files
+    "matchStrings": [
+      "registryUrl=(?<registryUrl>.*?)\n *chart: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
+    ],
+    // tell renovatebot to search helm repositories
+    "datasourceTemplate": "helm"
+  }
   ],
   "kubernetes": {
     "fileMatch": ["mycluster/myapp/.+\\.yaml$"]
+  },
+  "packageRules": [
+  {
+    "matchDatasources": [
+      "docker"
+    ],
+    "matchPackageNames": [
+      "ghcr.io/kaitoii11/myapp"
+    ],
+    "versioning": "regex:^(?<compatibility>.*)v(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?$"
   }
+  ]
 }
