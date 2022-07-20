@@ -3,7 +3,11 @@ kind: Kustomization
 namespace: flux-system
 resources:
   - bitnami.yaml
+  - flagger.yaml
+  - harbor.yaml
   - jetstack.yaml
   - longhorn.yaml
+  - metrics-server.yaml
+  - nginx.yaml
   - prometheus.yaml
   - traefik.yaml

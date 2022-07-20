@@ -7,6 +7,7 @@ resources:
 - flux-system
 - harbor
 - metallb
+- metrics-server
 - myapp
 - longhorn
 - nginx
