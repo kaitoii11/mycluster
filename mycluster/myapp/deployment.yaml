@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: ghcr.io/kaitoii11/myapp:v0.0.2
+          image: ghcr.io/kaitoii11/myapp:v0.0.3
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
