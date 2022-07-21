@@ -29,7 +29,7 @@ flux bootstrap github --owner=$GITHUB_USER --repository=mycluster --branch=main 
 `git clone  https://github.com/$GITHUB_USER/mycluster`
 
 ## Cert-manager Install
-- flux create source helm jetstack --url https://charts.jetstack.io --export ./mycluster/flux-system/helm-repositories/jetstack.yaml 
+- flux create source helm jetstack --url https://charts.jetstack.io --export ./mycluster/flux-system/helm-repositories/jetstack.yaml
 
 - flux create HelmRelease cert-manager --chart cert-manager --source HelmRepository/jetstack --target-namespace cert-manager --export ./mycluster/cert-manager/helm-release.yaml
 
