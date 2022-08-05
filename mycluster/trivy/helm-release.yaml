@@ -8,6 +8,7 @@ spec:
   interval: 1h
   chart:
     spec:
+      # renovate: registryUrl=https://aquasecurity.github.io/helm-charts/
       chart: trivy-operator
       version: v0.1.5
       sourceRef:
