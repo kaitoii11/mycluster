@@ -21,11 +21,7 @@ spec:
   releaseName: metallb
   values:
     configInline:
-      address-pools:
-      - name: generic-cluster-pool
-        protocol: layer2
-        addresses:
-        - 192.168.254.1-192.168.254.254
-    controller:
-      psp:
-        create: false
+      metrics:
+        enabled: true
+      serviceMonitor:
+        enabled: true
