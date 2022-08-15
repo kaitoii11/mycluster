@@ -20,8 +20,11 @@ spec:
   targetNamespace: traefik-system
   releaseName: traefik
   values:
-    additionalArguments:
-    - "--metrics.prometheus=true"
     ingressClass:
       enabled: true
       isDefaultClass: false
+    ports:
+      traefik:
+        expose: true
+      metrics:
+        expose: true
