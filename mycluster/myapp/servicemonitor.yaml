@@ -4,6 +4,7 @@ metadata:
   name: myapp
   namespace: myapp
   labels:
+    release: prometheus
     team: myapp
 spec:
   namespaceSelector:

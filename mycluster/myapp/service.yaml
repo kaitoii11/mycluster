@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: myapp
   namespace: myapp
+  labels:
+    app: myapp
 spec:
   type: LoadBalancer
   selector:
