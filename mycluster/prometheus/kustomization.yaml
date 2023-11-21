@@ -4,6 +4,7 @@ resources:
   - namespace.yaml
   - helm-release.yaml
   - ./rules
+  - ./flux-system/podmonitor.yaml
 configMapGenerator:
   - name: cilium-dashboards
     namespace: prometheus-system
