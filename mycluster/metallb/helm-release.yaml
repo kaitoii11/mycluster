@@ -8,12 +8,11 @@ spec:
   interval: 1h
   chart:
     spec:
-      # renovate: registryUrl=https://charts.bitnami.com/bitnami
       chart: metallb
       version: 4.7.14
       sourceRef:
         kind: HelmRepository
-        name: bitnami
+        name: metallb
         namespace: flux-system
   install:
     createNamespace: true
@@ -21,7 +20,6 @@ spec:
   releaseName: metallb
   values:
     configInline:
-      metrics:
-        enabled: true
-      serviceMonitor:
-        enabled: true
+      prometheus:
+        serviceMonitor:
+          enabled: true

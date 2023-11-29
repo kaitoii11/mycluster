@@ -3,11 +3,11 @@ kind: Kustomization
 namespace: flux-system
 resources:
   - aqua.yaml
-  - bitnami.yaml
   - flagger.yaml
   - harbor.yaml
   - jetstack.yaml
   - longhorn.yaml
+  - metallb.yaml
   - metrics-server.yaml
   - nginx.yaml
   - prometheus.yaml
