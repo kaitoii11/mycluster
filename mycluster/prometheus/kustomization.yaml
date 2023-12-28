@@ -30,4 +30,11 @@ configMapGenerator:
     options:
       labels:
         grafana_dashboard: "1"
+  - name: nfd-dashboards
+    namespace: prometheus-system
+    files:
+      - dashboards/node-feature-discovery.json
+    options:
+      labels:
+        grafana_dashboard: "1"
 

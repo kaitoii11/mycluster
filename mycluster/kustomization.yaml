@@ -9,6 +9,7 @@ resources:
 - metallb
 - metrics-server
 - myapp
+- node-feature-discovery
 - longhorn
 - nginx
 - prometheus
