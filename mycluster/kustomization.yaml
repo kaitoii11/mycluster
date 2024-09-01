@@ -5,6 +5,7 @@ resources:
 - adguard
 - cert-manager
 - flagger
+- fluent
 - flux-system
 - metallb
 - metrics-server

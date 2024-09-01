@@ -4,6 +4,7 @@ namespace: flux-system
 resources:
   - aqua.yaml
   - flagger.yaml
+  - fluentbit.yaml
   - jetstack.yaml
   - longhorn.yaml
   - metallb.yaml
