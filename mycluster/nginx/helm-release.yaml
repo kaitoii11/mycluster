@@ -10,7 +10,7 @@ spec:
     spec:
       # renovate: registryUrl=https://helm.nginx.com/stable
       chart: nginx-ingress
-      version: 1.2.0
+      version: 1.4.2
       sourceRef:
         kind: HelmRepository
         name: nginx
