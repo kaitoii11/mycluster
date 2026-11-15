@@ -9,6 +9,5 @@ resources:
   - longhorn.yaml
   - metallb.yaml
   - metrics-server.yaml
-  - nginx.yaml
   - prometheus.yaml
   - traefik.yaml

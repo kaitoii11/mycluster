@@ -12,7 +12,6 @@ resources:
 - myapp
 - node-feature-discovery
 - longhorn
-- nginx
 - prometheus
 - traefik
 - trivy
