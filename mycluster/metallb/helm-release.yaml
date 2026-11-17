@@ -19,7 +19,6 @@ spec:
   targetNamespace: metallb-system
   releaseName: metallb
   values:
-    configInline:
-      prometheus:
-        serviceMonitor:
-          enabled: true
+    prometheus:
+      serviceMonitor:
+        enabled: true
