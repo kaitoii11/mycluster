@@ -14,4 +14,3 @@ resources:
 - longhorn
 - prometheus
 - traefik
-- trivy
