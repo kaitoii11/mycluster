@@ -27,7 +27,7 @@ jobs:
         dry-run: 'no'
 
     - name: Create pull request for renovatebot helm-release
-      uses: peter-evans/create-pull-request@v7
+      uses: peter-evans/create-pull-request@v8
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: renovate-annotations
